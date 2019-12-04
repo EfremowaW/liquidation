@@ -8,44 +8,55 @@
 	<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700|Roboto:400,500&display=swap&subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<header class="header">
-	<div class="header__top">
-		<div class="container">
-			<a class="header__phone" href="tel:380963092145">+38 (096) 309 21 45</a>
-			<a class="header__email" href="#">layout585@gmail.com</a>
-			<a class="header__btn" href="#">Бесплатная консультация</a>
-		</div>
-	</div>
-	<div class="header__content">
-		<div class="container">
-			<div class="header__logo">
-				<a>
-					<img src="img/logo.png" alt="Логотип">
-				</a>
+	<header class="header">
+		<div class="header__top">
+			<div class="container">
+				<a class="header__phone" href="tel:380963092145">+38 (096) 309 21 45</a>
+				<a class="header__email" href="#">layout585@gmail.com</a>
+				<a data-fancybox data-src="#modal" href="javascript:;" class="header__btn" href="#">Бесплатная консультация</a>
 			</div>
-			<nav class="header__menu">
-				<ul>
-					<li>
-						<a href="#">Главная</a>
-					</li>
-					<li>
-						<a href="#">О компании</a>
-					</li>
-					<li>
-						<a href="#">Услуги</a>
-					</li>
-					<li>
-						<a href="#">Контакты</a>
-					</li>
-				</ul>
-			</nav>
 		</div>
-	</div>
-</header>
+		<div class="header__content">
+			<div class="container">
+				<div class="header__logo">
+					<a>
+						<img src="img/logo.png" alt="Логотип">
+					</a>
+				</div>
+				<nav class="header__menu">
+					<ul>
+						<li>
+							<a href="#">Главная</a>
+						</li>
+						<li>
+							<a href="#">О компании</a>
+						</li>
+						<li>
+							<a href="#">Услуги</a>
+						</li>
+						<li>
+							<a href="#">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
 	
+	
+	
+	<div style="display: none;" id="modal">
+		<h2>Hello!</h2>
+		<p>You are awesome!</p>
+	</div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
+	<script src="js/main.js"></script>	
 </body>
 </html>
