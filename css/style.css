@@ -112,6 +112,100 @@ body {
 	border-color: #ffc222;
 }
 
+/*  Слайдер  */
+.slider {
+	background: #3d3d3d url("../img/slide1-bg.jpg") no-repeat center / cover;
+}
+.slider__inner {
+	position: relative;
+}
+.slider__content {
+	max-width: 700px;
+	margin: 0 auto;
+	padding: 120px 0 180px;
+	text-align: center;
+}
+.slider__title {
+	margin: 0;
+	margin-bottom: 25px;
+	font-family: "Roboto", "Arial", sans-serif;
+	font-weight: 500;
+	font-size: 30px;
+	line-height: 1.2;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+	color: #fff;
+}
+.slider__text {
+	margin: 0;
+	margin-bottom: 45px;
+	font-size: 18px;
+	line-height: 24px;
+	color: #d3d2d2;
+}
+.default-btn {
+	position: relative;
+	padding: 5px 20px;
+	font-family: "Roboto", "Arial", sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 24px;
+	letter-spacing: 0.025em;
+	border: 1px solid #ffc222;
+	border-right-width: 20px;
+	transition: all 0.2s linear;
+	outline: none;
+}
+.default-btn::after {
+	content: "\f105";
+	font-family: "icomoon";
+	position: absolute;
+	top: 50%;
+	right: -12px;
+	transform: translateY(-50%);
+}
+.default-btn:hover,
+.default-btn:focus {
+	transform: scale(1.05);
+}
+.slider__btn {
+	color: #fff;
+}
+.slick-arrow {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 5;
+	display: block;
+	width: 40px;
+	height: 40px;
+	font-family: "icomoon";
+	color: #fff;
+	background-color: #ffc222;
+	border: 1px solid #fff;
+	outline: none;
+	box-shadow: none;
+	cursor: pointer;
+}
+.slick-disabled {
+	background-color: transparent;
+	cursor: auto;
+}
+.slick-prev {
+	left: 0;
+}
+.slick-prev::before {
+	content: "\f104";
+}
+.slick-next {
+	right: 0;
+}
+.slick-next::before {
+	content: "\f105";
+}
+
+
+
 /*  Модалка (Бесплатная консультация)  */
 #modal {
 	display: none;

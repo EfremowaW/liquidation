@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -18,7 +19,7 @@
 			<div class="container">
 				<a class="header__phone" href="tel:380963092145">+38 (096) 309 21 45</a>
 				<a class="header__email" href="#">layout585@gmail.com</a>
-				<a data-fancybox data-src="#modal" href="javascript:;" class="header__btn" href="#">Бесплатная консультация</a>
+				<a data-fancybox data-src="#modal" href="javascript:;" class="header__btn">Бесплатная консультация</a>
 			</div>
 		</div>
 		<div class="header__content">
@@ -48,15 +49,43 @@
 		</div>
 	</header>
 	
+	<main>
+		<section class="slider">
+			<div class="container">
+				<div class="slider__inner">
+					<div class="slider__item">
+						<div class="slider__content">
+							<h2 class="slider__title">Комплексное закрытие предприятия</h2>
+							<p class="slider__text">Полное прекращение существования юридического лица с сохранением легальности всей предыдущей деятельности.</p>
+							<a data-fancybox data-src="#modal" href="javascript:;" class="slider__btn default-btn">Оставить заявку</a>
+						</div>
+					</div>
+					<div class="slider__item">
+						<div class="slider__content">
+							<h2 class="slider__title">Комплексное закрытие предприятия</h2>
+							<p class="slider__text">Полное прекращение существования юридического лица с сохранением легальности всей предыдущей деятельности.</p>
+							<a data-fancybox data-src="#modal" href="javascript:;" class="slider__btn default-btn">Оставить заявку</a>
+						</div>
+				</div>
+					</div>
+			</div>
+		</section>
+		
+		
+	</main>
 	
 	
-	<div style="display: none;" id="modal">
+	
+	<div id="modal">
 		<h2>Hello!</h2>
 		<p>You are awesome!</p>
 	</div>
 	
+	
+	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="js/jquery.fancybox.min.js"></script>
+	<script src="js/slick.min.js"></script>
 	<script src="js/main.js"></script>	
 </body>
 </html>
