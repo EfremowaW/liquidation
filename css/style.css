@@ -204,6 +204,152 @@ body {
 	content: "\f105";
 }
 
+/*  Общие стили для секций  */
+.section__top {
+	margin-bottom: 60px;
+	display: flex;
+	justify-content: space-between;
+	-ms-align-items: flex-start;
+	align-items: flex-start;
+}
+.section__header {
+	position: relative;
+	max-width: 520px;
+	padding-left: 140px;
+}
+.section__header::before {
+	content: "";
+	position: absolute;
+	top: 11px;
+	left: 0;
+	width: 105px;
+	height: 2px;
+	background-color: #ffc222;
+}
+.section__title {
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", "Arial", sans-serif;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 1;
+	color: #212020;
+}
+.section__subtitle {
+	letter-spacing: 0.001em;
+}
+.section__top-btn {
+	padding: 5px 38px;
+	font-family: "Roboto", "Arial", sans-serif;
+	line-height: 24px;
+	color: #373636;
+	border: 3px solid #e6e6e6;
+}
+
+/*  Раздел "Наши услуги"  */
+.services {
+	padding: 50px 0 30px;
+}
+.services__list {
+	display: flex;
+	justify-content: space-between;
+}
+.services__item {
+	width: 360px;
+	padding: 110px 40px 40px;
+	background-color: #f9f9f9;
+	box-shadow: 0 7px 15px 0 rgba(91, 89, 89, 0.14);
+}
+.services__item1 {
+	background: #f9f9f9 url("../img/service-icon1.png") no-repeat center 36px;
+}
+.services__item2 {
+	background: #f9f9f9 url("../img/service-icon2.png") no-repeat center 36px;
+}
+.services__item3 {
+	background: #f9f9f9 url("../img/service-icon3.png") no-repeat center 46px;
+}
+.services__item-title {
+	margin: 0;
+	margin-bottom: 20px;
+	padding: 0;
+	font-family: "Roboto", "Arial", sans-serif;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 24px;
+	color: #212020;
+	text-align: center;
+}
+.services__item-text {
+	min-height: 80px;
+	margin: 0;
+	margin-bottom: 60px;
+	padding: 0;
+	text-align: center;
+	word-wrap: break-word;
+}
+.services__item-links {
+	display: flex;
+	justify-content: space-between;
+	-ms-align-items: center;
+	align-items: center;
+}
+.link-info {
+	font-family: "Roboto", "Arial", sans-serif;
+	color: #050505;
+	text-decoration: underline;
+}
+.services__btn {
+	color: #373636;
+}
+.services__btn::after {
+	color: #fff;
+}
+
+/*  Раздел "О компаиии"  */
+.about {
+	padding: 40px 0 50px;
+	background: #767676 url("../img/about-bg.jpg") no-repeat center / cover;
+}
+.about__content {
+	max-width: 550px;
+	padding-left: 10px;
+}
+.about__title {
+	margin: 0;
+	margin-bottom: 25px;
+	padding: 0;
+	font-family: "Roboto", "Arial", sans-serif;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 1;
+	color: #fff;
+}
+.about__text {
+	margin: 0;
+	margin-bottom: 30px;
+	padding: 0;
+	letter-spacing: 0.001em;
+	color: #d3d2d2;
+}
+.about__btn {
+	color: #fff;
+}
+.about__btn::after {
+	color: #303030;
+}
+
+/*  Раздел "Получить консультацию"  */
+.consult__content {
+	padding: 40px 0;
+	background: url("../img/consult-bg.jpg") no-repeat right bottom / contain;
+}
+
+
+
+
+
+
 
 
 /*  Модалка (Бесплатная консультация)  */
