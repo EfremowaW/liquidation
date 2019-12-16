@@ -27,7 +27,6 @@ body {
 	line-height: 18px;
 	color: #5e5e5e;
 	background-color: #fff;
-	/*font-family: "Roboto", "Arial", sans-serif;*/
 }
 
 /*  Хедер  */
@@ -112,6 +111,33 @@ body {
 	border-color: #ffc222;
 }
 
+/*  Общие стили для ссылок-кнопок со стрелками  */
+.default-btn {
+	position: relative;
+	padding: 5px 20px;
+	font-family: "Roboto", "Arial", sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 24px;
+	letter-spacing: 0.025em;
+	border: 1px solid #ffc222;
+	border-right-width: 20px;
+	transition: all 0.2s linear;
+	outline: none;
+}
+.default-btn::after {
+	content: "\f105";
+	font-family: "icomoon";
+	position: absolute;
+	top: 50%;
+	right: -12px;
+	transform: translateY(-50%);
+}
+.default-btn:hover,
+.default-btn:focus {
+	transform: scale(1.05);
+}
+
 /*  Слайдер  */
 .slider {
 	background: #3d3d3d url("../img/slide1-bg.jpg") no-repeat center / cover;
@@ -142,31 +168,6 @@ body {
 	font-size: 18px;
 	line-height: 24px;
 	color: #d3d2d2;
-}
-.default-btn {
-	position: relative;
-	padding: 5px 20px;
-	font-family: "Roboto", "Arial", sans-serif;
-	font-weight: 500;
-	font-size: 14px;
-	line-height: 24px;
-	letter-spacing: 0.025em;
-	border: 1px solid #ffc222;
-	border-right-width: 20px;
-	transition: all 0.2s linear;
-	outline: none;
-}
-.default-btn::after {
-	content: "\f105";
-	font-family: "icomoon";
-	position: absolute;
-	top: 50%;
-	right: -12px;
-	transform: translateY(-50%);
-}
-.default-btn:hover,
-.default-btn:focus {
-	transform: scale(1.05);
 }
 .slider__btn {
 	color: #fff;
@@ -236,7 +237,7 @@ body {
 	color: #212020;
 }
 .section__subtitle {
-	letter-spacing: 0.001em;
+	letter-spacing: 0.01em;
 }
 .section__top-btn {
 	padding: 5px 38px;
@@ -258,7 +259,7 @@ body {
 	width: 360px;
 	padding: 110px 40px 40px;
 	background-color: #f9f9f9;
-	box-shadow: 0 7px 15px 0 rgba(91, 89, 89, 0.14);
+	box-shadow: 0 7px 24.3px 2.7px rgba(91, 89, 89, 0.14);
 }
 .services__item1 {
 	background: #f9f9f9 url("../img/service-icon1.png") no-repeat center 36px;
@@ -297,7 +298,7 @@ body {
 .link-info {
 	font-family: "Roboto", "Arial", sans-serif;
 	color: #050505;
-	text-decoration: underline;
+	border-bottom: 1px solid #050505;
 }
 .services__btn {
 	color: #373636;
@@ -329,7 +330,7 @@ body {
 	margin: 0;
 	margin-bottom: 30px;
 	padding: 0;
-	letter-spacing: 0.001em;
+	letter-spacing: 0.01em;
 	color: #d3d2d2;
 }
 .about__btn {
@@ -342,9 +343,133 @@ body {
 /*  Раздел "Получить консультацию"  */
 .consult__content {
 	padding: 40px 0;
-	background: url("../img/consult-bg.jpg") no-repeat right bottom / contain;
+	background: url("../img/consult-bg.jpg") no-repeat right bottom;
+}
+.message-form {
+	margin-top: 30px;
+	max-width: 850px;
+	display: flex;
+	justify-content: space-between;
+	font-family: "Roboto", "Arial", sans-serif;
+	line-height: 36px;
+	color: #282828;
+}
+.form-column {
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+}
+.form-column:last-child {
+	margin-left: 30px;
+	flex-grow: 1;
+}
+.message-form label {
+	padding-left: 5px;
+	font-weight: 500;
+}
+.message-form label:not(:first-of-type) {
+	margin-top: 10px;
+}
+.message-form input {
+	display: block;
+	width: 265px;
+	min-height: 40px;
+}
+.message-form .jq-selectbox__select {
+	display: block;
+	width: 265px;
+	min-height: 40px;
+	padding: 5px 10px;
+	border: 1px solid #e6e6e6;
+}
+.message-form .jq-selectbox__trigger-arrow::after {
+	content: "\f105";
+	font-family: "icomoon";
+	position: absolute;
+	top: 50%;
+	right: 15px;
+	transform: translateY(-50%) rotate(90deg);
+}
+.message-form .jq-selectbox__dropdown {
+	padding: 10px 10px;
+	background-color: #fff;
+	border: 1px solid #e6e6e6;
+}
+.message-form textarea {
+	max-width: 555px;
+	min-height: 212px;
+	margin-bottom: 40px;
+	resize: none;
+}
+.message-form input,
+.message-form textarea {
+	padding: 5px 10px;
+	border: 1px solid #e6e6e6;
+	outline-color: #ffc222;
+}
+.message-form button {
+	margin-top: auto;
+	min-height: 40px;
+	-ms-align-self: flex-end;
+	align-self: flex-end;
+	background-color: #fff;
+	box-shadow: none;
+	color: #282828;
 }
 
+/*  Раздел "Преимущества"  */
+.features {
+	padding: 50px 0 40px;
+	background: #767676 url("../img/features-bg.jpg") no-repeat top center / cover;
+}
+.features__list {
+	display: flex;
+	justify-content: space-between;
+}
+.features__item {
+	position: relative;
+	width: 360px;
+	padding: 65px 10px 10px;
+	text-align: center;
+}
+.features__item::before {
+	content: "\f00c";
+	font-family: "icomoon";
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 40px;
+	height: 40px;
+	padding: 10px 10px;
+	color: #fff;
+	border: 2px solid #ffc222;
+	transform: translate(-50%);
+}
+.features__item-title {
+	margin: 0;
+	margin-bottom: 20px;
+	padding: 0;
+	font-family: "Roboto", "Arial", sans-serif;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 24px;
+	color: #fff;
+}
+.features__item-text {
+	margin: 0;
+	padding: 0;
+	line-height: 24px;
+	letter-spacing: 0.01em;
+	color: #d3d2d2;
+}
+
+/*  Раздел "Новости компании"  */
+.news {
+	padding: 60px 0 40px;
+}
 
 
 
@@ -355,9 +480,21 @@ body {
 /*  Модалка (Бесплатная консультация)  */
 #modal {
 	display: none;
+	cursor: auto;
 }
-
-
+.modal__title {
+	margin: 0;
+	margin-bottom: 25px;
+	padding: 0;
+	font-family: "Roboto", "Arial", sans-serif;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 1;
+	text-align: center;
+}
+.modal__form button {
+	cursor: pointer;
+}
 
 
 

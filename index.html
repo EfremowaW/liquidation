@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/jquery.formstyler.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -127,18 +128,95 @@
 						<h2 class="section__title">Получить Консультацию</h2>
 						<p class="section__subtitle">Комплексный подход к вашему вопросу, своевременная правовая помощь, представление интересов во всех судебных инстанциях.</p>
 					</div>
-					<form action="#" method="post" class="consult__form"></form>
+					<form action="#" method="post" class="consult__form message-form">
+						<div class="form-column">
+							<label for="mail">E-mail</label>
+							<input id="mail" type="email" name="client-mail">
+							<label for="phone">Контактный телефон</label>
+							<input id="phone" type="tel" name="client-phone">
+							<label for="name">ФИО</label>
+							<input id="name" type="text" name="client-name">
+							<label for="theme">Тема вопроса</label>
+							<select id="theme" name="question-theme">
+								<option>Банкротство и ликвидация</option>
+								<option>Адвокатское сопровождение</option>
+								<option>Налоговый аудит</option>
+							</select>							
+						</div>
+						<div class="form-column">
+							<label for="message">Сообщение</label>
+							<textarea name="client-message" id="message"></textarea>
+							<button type="submit" class="default-btn">Получить консультацию</button>
+						</div>
+					</form>
 				</div>
 			</div>
 		</section>
 		
+		<section class="features">
+			<div class="container">
+				<ul class="features__list">
+					<li class="features__item">
+						<h3 class="features__item-title">Десятки добровольных ликвидаций ежемесячно</h3>
+						<p class="features__item-text">Мы умеем минимизировать все риски в процессе добровольной ликвидации юридических лиц.</p>
+					</li>
+					<li class="features__item">
+						<h3 class="features__item-title">Отличное знание законов в сфере банкротства</h3>
+						<p class="features__item-text">Позволяют нам эффективно отстаивать как интересы кредиторов, так и интересы собственников проблемной организации.</p>
+					</li>
+					<li class="features__item">
+						<h3 class="features__item-title">Большой опыт сопровождения банкротства</h3>
+						<p class="features__item-text">Мы обладаем большим опытом сопровождения процедур банкротства предприятий.</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+		
+		<section class="news">
+			<div class="container">
+				<div class="section__top">
+					<div class="section__header">
+						<h2 class="section__title">Новости Компании</h2>
+						<p class="section__subtitle">Комплексный подход к вашему вопросу, своевременная правовая помощь, представление интересов во всех судебных инстанциях.</p>
+					</div>
+					<a href="#" class="section__top-btn">Открыть все новости</a>
+				</div>
+				<div class="news__content">
+					<div class="news__cite"></div>
+					<ul class="news__prev-list">
+						<li class="news__prev-item"></li>
+						<li class="news__prev-item"></li>
+					</ul>					
+				</div>
+			</div>
+		</section>
 	</main>
 	
 	
 	
 	<div id="modal">
-		<h2>Hello!</h2>
-		<p>You are awesome!</p>
+		<h2 class="modal__title">Оставьте заявку на бесплатную консультацию!</h2>
+		<form action="#" method="post" class="modal__form message-form">
+			<div class="form-column">
+				<label for="m-mail">E-mail</label>
+				<input id="m-mail" type="email" name="client-mail">
+				<label for="m-phone">Контактный телефон</label>
+				<input id="m-phone" type="tel" name="client-phone">
+				<label for="m-name">ФИО</label>
+				<input id="m-name" type="text" name="client-name">
+				<label for="m-theme">Тема вопроса</label>
+				<select id="m-theme" name="question-theme">
+					<option>Банкротство и ликвидация</option>
+					<option>Адвокатское сопровождение</option>
+					<option>Налоговый аудит</option>
+				</select>							
+			</div>
+			<div class="form-column">
+				<label for="m-message">Сообщение</label>
+				<textarea name="client-message" id="m-message"></textarea>
+				<button type="submit" class="default-btn">Получить консультацию</button>
+			</div>
+		</form>
 	</div>
 	
 	
@@ -146,6 +224,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="js/jquery.fancybox.min.js"></script>
 	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.formstyler.min.js"></script>
 	<script src="js/main.js"></script>	
 </body>
 </html>
